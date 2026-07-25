@@ -1,426 +1,365 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pranali Londhe | AI/ML Engineer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pranali Londhe — AI/ML Engineer</title>
+<meta name="description" content="Pranali Londhe — AI/ML Engineer building intelligent solutions with Machine Learning, Deep Learning, Generative AI and Python.">
 
-```
-<!-- This connects HTML with style.css -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="./style.css">
-```
-
 </head>
-
 <body>
 
-```
-<header class="navbar">
-    <div class="logo">&lt;Pranali/&gt;</div>
+<div class="bg-grid"></div>
+<div class="bg-glow bg-glow--one"></div>
+<div class="bg-glow bg-glow--two"></div>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="top">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">&lt;Pranali/&gt;</a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#top">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="connect-button">Let's Connect →</a>
-</header>
+    <a href="#contact" class="btn btn--nav">Let's Connect <span aria-hidden="true">→</span></a>
 
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
 
 <main>
 
-    <section id="home" class="hero">
-
-        <div class="hero-content">
-
-            <div class="available">
-                <span></span>
-                AVAILABLE FOR OPPORTUNITIES
-            </div>
-
-            <h1>
-                Building the future with
-                <strong>Artificial Intelligence.</strong>
-            </h1>
-
-            <p>
-                Hi, I'm <b>Pranali Londhe</b> — an AI/ML Engineer passionate about building intelligent,
-                practical, and impactful solutions using Machine Learning, Deep Learning,
-                Generative AI, and Python.
-            </p>
-
-            <div class="buttons">
-                <a href="#projects" class="primary-button">Explore My Work →</a>
-                <a href="#contact" class="secondary-button">Let's Connect</a>
-            </div>
-
-            <div class="socials">
-                <a href="https://github.com/Pranali-Londhe" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-                <a href="mailto:your-email@example.com">Email</a>
-            </div>
-
-        </div>
-
-
-        <div class="hero-visual">
-
-            <div class="orbit orbit-1"></div>
-            <div class="orbit orbit-2"></div>
-            <div class="orbit orbit-3"></div>
-
-            <div class="brain">
-                🧠
-            </div>
-
-            <div class="floating-card card-1">🐍 Python</div>
-            <div class="floating-card card-2">🤖 AI Agent</div>
-            <div class="floating-card card-3">⚡ ML</div>
-
-        </div>
-
-    </section>
-
-
-    <section id="about" class="section">
-
-        <div class="section-title">
-            <span>01 — ABOUT ME</span>
-            <h2>Turning ideas into <strong>intelligent solutions.</strong></h2>
-        </div>
-
-        <div class="about-container">
-
-            <div class="about-text">
-
-                <p>
-                    I am an Artificial Intelligence and Machine Learning Engineer with a strong foundation
-                    in Python, Machine Learning, Deep Learning, and Generative AI.
-                </p>
-
-                <p>
-                    I enjoy solving real-world problems by combining data, algorithms, and intelligent systems.
-                    My experience includes developing OCR applications, deep learning systems, AI agents,
-                    NLP applications, and predictive machine learning models.
-                </p>
-
-                <p>
-                    I am continuously learning and building projects that transform complex problems into
-                    practical, user-friendly solutions.
-                </p>
-
-            </div>
-
-            <div class="stats">
-
-                <div class="stat">
-                    <h3>2026</h3>
-                    <p>AI/ML Graduate</p>
-                </div>
-
-                <div class="stat">
-                    <h3>10+</h3>
-                    <p>Projects Built</p>
-                </div>
-
-                <div class="stat">
-                    <h3>AI</h3>
-                    <p>My Passion</p>
-                </div>
-
-                <div class="stat">
-                    <h3>∞</h3>
-                    <p>Learning Mindset</p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="skills" class="section">
-
-        <div class="section-title">
-            <span>02 — TECHNICAL SKILLS</span>
-            <h2>My <strong>technical toolkit.</strong></h2>
-        </div>
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-                <div class="icon">🐍</div>
-                <h3>Programming</h3>
-                <p>Python, Core Java, SQL</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">📊</div>
-                <h3>Machine Learning</h3>
-                <p>Scikit-learn, Pandas, NumPy, Statistics</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">🧠</div>
-                <h3>Deep Learning</h3>
-                <p>TensorFlow, Keras, PyTorch, CNN, U-Net</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">🤖</div>
-                <h3>Generative AI</h3>
-                <p>LLMs, LangChain, LangGraph, RAG, AI Agents</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">👁️</div>
-                <h3>Computer Vision</h3>
-                <p>OpenCV, Tesseract OCR, EasyOCR</p>
-            </div>
-
-            <div class="skill-card">
-                <div class="icon">☁️</div>
-                <h3>Tools & Cloud</h3>
-                <p>AWS, Git, GitHub, Streamlit, FastAPI</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="projects" class="section">
-
-        <div class="section-title">
-            <span>03 — FEATURED PROJECTS</span>
-            <h2>Things I've <strong>built.</strong></h2>
-        </div>
-
-        <div class="projects-grid">
-
-            <article class="project-card featured">
-
-                <div class="project-top">
-                    <span>01</span>
-                    <span>GENERATIVE AI</span>
-                </div>
-
-                <h3>Autonomous Document Agent</h3>
-
-                <p>
-                    An intelligent AI agent capable of understanding tasks, creating execution plans,
-                    performing actions, and generating professional documents using LLM-powered workflows.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>FastAPI</span>
-                    <span>Groq LLM</span>
-                    <span>AI Agents</span>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-                    <span>02</span>
-                    <span>COMPUTER VISION</span>
-                </div>
-
-                <h3>FinOCR</h3>
-
-                <p>
-                    A multilingual OCR application designed to extract text from financial documents
-                    using image processing and OCR technologies.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>OpenCV</span>
-                    <span>Tesseract</span>
-                    <span>Streamlit</span>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-                    <span>03</span>
-                    <span>DEEP LEARNING</span>
-                </div>
-
-                <h3>Brain Tumor & Blockage Detection</h3>
-
-                <p>
-                    A deep learning project focused on medical image analysis using CNN-based classification
-                    and U-Net segmentation techniques.
-                </p>
-
-                <div class="tags">
-                    <span>TensorFlow</span>
-                    <span>CNN</span>
-                    <span>U-Net</span>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-                    <span>04</span>
-                    <span>NLP & GENERATIVE AI</span>
-                </div>
-
-                <h3>AI Text Summarizer</h3>
-
-                <p>
-                    An AI-powered application that uses transformer-based models to generate concise summaries
-                    from lengthy text.
-                </p>
-
-                <div class="tags">
-                    <span>Transformers</span>
-                    <span>Hugging Face</span>
-                    <span>Gradio</span>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-                    <span>05</span>
-                    <span>LLM APPLICATION</span>
-                </div>
-
-                <h3>MovieInsight Agent</h3>
-
-                <p>
-                    An intelligent application that extracts structured information from movie-related
-                    queries using LLMs and structured output parsing.
-                </p>
-
-                <div class="tags">
-                    <span>LangChain</span>
-                    <span>LLMs</span>
-                    <span>Pydantic</span>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-                    <span>06</span>
-                    <span>MACHINE LEARNING</span>
-                </div>
-
-                <h3>Heart Disease Prediction</h3>
-
-                <p>
-                    A machine learning application that predicts the likelihood of heart disease
-                    using supervised learning techniques.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Scikit-learn</span>
-                    <span>Streamlit</span>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <section id="experience" class="section">
-
-        <div class="section-title">
-            <span>04 — EXPERIENCE & EDUCATION</span>
-            <h2>My <strong>journey so far.</strong></h2>
-        </div>
-
-        <div class="timeline">
-
-            <div class="timeline-item">
-                <span class="year">2026</span>
-                <h3>B.E. Artificial Intelligence & Machine Learning</h3>
-                <h4>Savitribai Phule Pune University</h4>
-                <p>
-                    Built a strong foundation in Artificial Intelligence, Machine Learning,
-                    Deep Learning, Data Science, and Software Development.
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="year">2024 — 2025</span>
-                <h3>AWS Cloud Women India Mentorship Program</h3>
-                <h4>Mentee</h4>
-                <p>
-                    Participated in a mentorship program focused on cloud technologies,
-                    career development, and professional growth.
-                </p>
-            </div>
-
-            <div class="timeline-item">
-                <span class="year">2025 — 2026</span>
-                <h3>Infosys Springboard Internship</h3>
-                <h4>AI / OCR Project</h4>
-                <p>
-                    Worked on FinOCR, a multilingual financial document intelligence application
-                    using computer vision and OCR technologies.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <section id="contact" class="contact">
-
-        <span>05 — GET IN TOUCH</span>
-
-        <h2>Let's build something <strong>intelligent.</strong></h2>
-
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <span class="eyebrow"><span class="eyebrow__dot"></span> AVAILABLE FOR OPPORTUNITIES</span>
+
+      <h1 class="hero__title">
+        Building the future with<br>
+        <span class="text-gradient">Artificial Intelligence.</span>
+      </h1>
+
+      <p class="hero__text">
+        Hi, I'm <strong>Pranali Londhe</strong> — an AI/ML Engineer passionate about building intelligent,
+        practical, and impactful solutions using Machine Learning, Deep Learning, Generative AI, and Python.
+      </p>
+
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">Explore My Work <span aria-hidden="true">→</span></a>
+        <a href="#contact" class="btn btn--ghost">Let's Connect</a>
+      </div>
+
+      <div class="hero__socials">
+        <a href="https://github.com/Pranali-Londhe" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-link">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pranali-londhe-677a8224a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-link">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+        </a>
+        <a href="mailto:pranulondhe381@gmail.com" aria-label="Send email" class="social-link">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2-.5 7.3 6.13a1 1 0 0 0 1 0L19.8 5H4.2ZM20 7.1l-7.1 5.95a2.5 2.5 0 0 1-3.2 0L4 7.1v11.4c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.1Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__visual" aria-hidden="false">
+      <div class="orbit orbit--outer"></div>
+      <div class="orbit orbit--inner"></div>
+
+      <div class="tech-chip tech-chip--python">
+        <span class="tech-chip__dot"></span> Python
+      </div>
+      <div class="tech-chip tech-chip--agent">
+        <span class="tech-chip__dot"></span> AI Agent
+      </div>
+      <div class="tech-chip tech-chip--ml">
+        <span class="tech-chip__dot"></span> Machine Learning
+      </div>
+
+      <div class="profile-ring">
+        <img src="profile.jpg" alt="Pranali Londhe - AI/ML Engineer" class="profile-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <p class="section__eyebrow">01 — About</p>
+    <h2 class="section__title">Turning ideas into<br><span class="text-gradient">intelligent solutions.</span></h2>
+
+    <div class="about__grid">
+      <div class="about__text">
         <p>
-            I'm currently open to opportunities in AI/ML Engineering, Machine Learning,
-            Generative AI, and Python Development.
+          I am an Artificial Intelligence and Machine Learning Engineer with a strong foundation in Python,
+          Machine Learning, Deep Learning, and Generative AI.
+        </p>
+        <p>
+          I enjoy solving real-world problems by combining data, algorithms, and intelligent systems.
+          My experience includes developing OCR applications, deep learning systems, AI agents, NLP applications,
+          and predictive machine learning models.
+        </p>
+        <p>
+          I am continuously learning and building projects that transform complex problems into practical,
+          user-friendly solutions.
         </p>
 
-        <a href="mailto:your-email@example.com" class="primary-button">
-            Say Hello →
-        </a>
+        <div class="about__edu-tag">
+          <span>B.E. in Artificial Intelligence &amp; Machine Learning</span>
+          <span class="about__edu-sub">Savitribai Phule Pune University · Graduated 2026</span>
+        </div>
+      </div>
 
-    </section>
+      <div class="stat-grid">
+        <div class="stat-card">
+          <span class="stat-card__num">2026</span>
+          <span class="stat-card__label">AI/ML Graduate</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">10+</span>
+          <span class="stat-card__label">Projects Built</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">AI</span>
+          <span class="stat-card__label">My Passion</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-card__num">∞</span>
+          <span class="stat-card__label">Learning Mindset</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <p class="section__eyebrow">02 — Skills</p>
+    <h2 class="section__title">The stack behind<br><span class="text-gradient">every solution.</span></h2>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card__icon" style="--i-color:#4ED7FF">&lt;/&gt;</div>
+        <h3>Programming</h3>
+        <p>Python, Core Java, SQL</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon" style="--i-color:#9B6CFF">◎</div>
+        <h3>Machine Learning</h3>
+        <p>Scikit-learn, Pandas, NumPy, Statistics</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon" style="--i-color:#4ADE80">◈</div>
+        <h3>Deep Learning</h3>
+        <p>TensorFlow, Keras, PyTorch, CNN, U-Net</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon" style="--i-color:#4ED7FF">✦</div>
+        <h3>Generative AI</h3>
+        <p>LLMs, LangChain, LangGraph, RAG, AI Agents</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon" style="--i-color:#9B6CFF">◉</div>
+        <h3>Computer Vision</h3>
+        <p>OpenCV, Tesseract OCR, EasyOCR</p>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card__icon" style="--i-color:#4ADE80">☁</div>
+        <h3>Tools &amp; Cloud</h3>
+        <p>AWS, Git, GitHub, Streamlit, FastAPI</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section" id="projects">
+    <p class="section__eyebrow">03 — Projects</p>
+    <h2 class="section__title">Things I've<br><span class="text-gradient">built and shipped.</span></h2>
+
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__num">01</span>
+          <span class="project-card__tag">Generative AI · Chatbot</span>
+        </div>
+        <h3>AssistAI — Personality Chatbot</h3>
+        <p>An AI-powered chatbot that provides different conversational personalities and interactive responses using Generative AI.</p>
+        <div class="project-card__stack">
+          <span>Python</span><span>Streamlit</span><span>LLM</span><span>Generative AI</span>
+        </div>
+        <a href="https://assistai-personality-chatbot-nxdttibfbkegxfizxlsfiw.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-card__link">View Live Project <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__num">02</span>
+          <span class="project-card__tag">Computer Vision · OCR</span>
+        </div>
+        <h3>FinOCR — Financial Document Intelligence</h3>
+        <p>A multilingual OCR application designed to extract text from financial documents using image processing and OCR technologies.</p>
+        <div class="project-card__stack">
+          <span>Python</span><span>OpenCV</span><span>Tesseract OCR</span><span>Streamlit</span>
+        </div>
+        <a href="https://finocr-ai.onrender.com" target="_blank" rel="noopener noreferrer" class="project-card__link">View Live Project <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__num">03</span>
+          <span class="project-card__tag">Machine Learning · Prediction</span>
+        </div>
+        <h3>Heart Disease Prediction</h3>
+        <p>A machine learning application that predicts the likelihood of heart disease using supervised learning techniques.</p>
+        <div class="project-card__stack">
+          <span>Python</span><span>Pandas</span><span>Scikit-learn</span><span>Streamlit</span>
+        </div>
+        <a href="https://heart-disease-prediction-using-machine-learning-cr4sukfgmijhnt.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-card__link">View Live Project <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__num">04</span>
+          <span class="project-card__tag">LLM · Information Extraction</span>
+        </div>
+        <h3>MovieInsight Agent</h3>
+        <p>An intelligent application that extracts structured information from movie-related queries using LLMs and structured output parsing.</p>
+        <div class="project-card__stack">
+          <span>LangChain</span><span>LLMs</span><span>Pydantic</span><span>Streamlit</span>
+        </div>
+        <a href="https://movieinsight-agent-eqjhap2eryvy2mcvnynnv3.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-card__link">View Live Project <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__num">05</span>
+          <span class="project-card__tag">Deep Learning · Medical AI</span>
+        </div>
+        <h3>Brain Tumor &amp; Blockage Detection</h3>
+        <p>A deep learning project focused on medical image analysis using CNN-based classification and U-Net segmentation techniques.</p>
+        <div class="project-card__stack">
+          <span>TensorFlow</span><span>Keras</span><span>CNN</span><span>U-Net</span>
+        </div>
+        <span class="project-card__badge">Project Demo Coming Soon</span>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="project-card__num">06</span>
+          <span class="project-card__tag">NLP · Generative AI</span>
+        </div>
+        <h3>AI Text Summarizer</h3>
+        <p>An AI-powered application that uses transformer-based models to generate concise summaries from lengthy text.</p>
+        <div class="project-card__stack">
+          <span>Transformers</span><span>Hugging Face</span><span>Gradio</span>
+        </div>
+        <span class="project-card__badge">Project Demo Coming Soon</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="experience">
+    <p class="section__eyebrow">04 — Experience</p>
+    <h2 class="section__title">Where I've<br><span class="text-gradient">grown and learned.</span></h2>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__year">2026</span>
+          <h3>B.E. Artificial Intelligence &amp; Machine Learning</h3>
+          <span class="timeline__org">Savitribai Phule Pune University</span>
+          <p>Built a strong foundation in Artificial Intelligence, Machine Learning, Deep Learning, Data Science, and Software Development.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__year">2024 — 2025</span>
+          <h3>AWS Cloud Women India Mentorship Program</h3>
+          <span class="timeline__org">Mentee</span>
+          <p>Participated in a mentorship program focused on cloud technologies, career development, and professional growth.</p>
+        </div>
+      </div>
+
+      <div class="timeline__item">
+        <div class="timeline__dot"></div>
+        <div class="timeline__card">
+          <span class="timeline__year">2025 — 2026</span>
+          <h3>Infosys Springboard Internship</h3>
+          <span class="timeline__org">AI / OCR Project</span>
+          <p>Worked on FinOCR, a multilingual financial document intelligence application using computer vision and OCR technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--contact" id="contact">
+    <div class="contact-card">
+      <p class="section__eyebrow">05 — Contact</p>
+      <h2 class="section__title">Let's build something<br><span class="text-gradient">intelligent.</span></h2>
+      <p class="contact-card__text">
+        I'm currently open to opportunities in AI/ML Engineering, Machine Learning, Generative AI, and Python Development.
+      </p>
+
+      <div class="contact-card__actions">
+        <a href="mailto:PASTE_YOUR_EMAIL_HERE" class="btn btn--primary">Say Hello <span aria-hidden="true">→</span></a>
+        <a href="https://github.com/Pranali-Londhe" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub</a>
+        <a href="PASTE_YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">LinkedIn</a>
+      </div>
+    </div>
+  </section>
 
 </main>
 
-
-<footer>
-    <p>Designed & Built by <b>Pranali Londhe</b></p>
-
-    <div>
-        <a href="https://github.com/Pranali-Londhe" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-    </div>
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <p>Designed &amp; Built by Pranali Londhe</p>
+  <div class="footer__links">
+    <a href="https://github.com/Pranali-Londhe" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="PASTE_YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  </div>
 </footer>
-```
+
+<script>
+  // Mobile navigation toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    navToggle.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+  });
+
+  document.querySelectorAll('#navLinks a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      navToggle.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
 
 </body>
 </html>
