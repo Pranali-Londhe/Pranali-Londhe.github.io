@@ -17,6 +17,7 @@
 <div class="bg-grid"></div>
 <div class="bg-glow bg-glow--one"></div>
 <div class="bg-glow bg-glow--two"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
 
 <!-- ============ NAVIGATION ============ -->
 <header class="nav" id="top">
@@ -24,15 +25,18 @@
     <a href="#top" class="nav__logo">Pranali</a>
 
     <nav class="nav__links" id="navLinks">
-      <a href="#top">Home</a>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
+      <a href="#top" data-nav="top">Home</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#experience" data-nav="experience">Experience</a>
+      <a href="#contact" data-nav="contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="btn btn--nav">Let's Connect <span aria-hidden="true">→</span></a>
+    <div class="nav__actions">
+      <a href="Pranali_Londhe_Resume_AIML_26%20.pdf" download class="btn btn--nav btn--nav-ghost">Resume</a>
+      <a href="#contact" class="btn btn--nav">Let's Connect <span aria-hidden="true">→</span></a>
+    </div>
 
     <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -59,14 +63,14 @@
 
       <div class="hero__actions">
         <a href="#projects" class="btn btn--primary">Explore My Work <span aria-hidden="true">→</span></a>
-        <a href="#contact" class="btn btn--ghost">Let's Connect</a>
+        <a href="Pranali_Londhe_Resume_AIML_26%20.pdf" download class="btn btn--ghost">Download Resume <span aria-hidden="true">↓</span></a>
       </div>
 
       <div class="hero__socials">
         <a href="https://github.com/Pranali-Londhe" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-link">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
         </a>
-        <a href="https://linkedin.com/pranali-londhe-677a8224a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-link">
+        <a href="https://www.linkedin.com/in/pranali-londhe-677a8224a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-link">
           <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
         </a>
         <a href="mailto:pranulondhe381@gmail.com" aria-label="Send email" class="social-link">
@@ -90,13 +94,13 @@
       </div>
 
       <div class="profile-ring">
-        <img src="profile.jpg" alt="Pranali Londhe - AI/ML Engineer" class="profile-img">
+        <img src="profile.JPG" alt="Pranali Londhe - AI/ML Engineer" class="profile-img">
       </div>
     </div>
   </section>
 
   <!-- ============ ABOUT ============ -->
-  <section class="section" id="about">
+  <section class="section reveal" id="about">
     <p class="section__eyebrow">01 — About</p>
     <h2 class="section__title">Turning ideas into<br><span class="text-gradient">intelligent solutions.</span></h2>
 
@@ -144,7 +148,7 @@
   </section>
 
   <!-- ============ SKILLS ============ -->
-  <section class="section" id="skills">
+  <section class="section reveal" id="skills">
     <p class="section__eyebrow">02 — Skills</p>
     <h2 class="section__title">The stack behind<br><span class="text-gradient">every solution.</span></h2>
 
@@ -188,7 +192,7 @@
   </section>
 
   <!-- ============ PROJECTS ============ -->
-  <section class="section" id="projects">
+  <section class="section reveal" id="projects">
     <p class="section__eyebrow">03 — Projects</p>
     <h2 class="section__title">Things I've<br><span class="text-gradient">built and shipped.</span></h2>
 
@@ -276,7 +280,7 @@
   </section>
 
   <!-- ============ EXPERIENCE ============ -->
-  <section class="section" id="experience">
+  <section class="section reveal" id="experience">
     <p class="section__eyebrow">04 — Experience</p>
     <h2 class="section__title">Where I've<br><span class="text-gradient">grown and learned.</span></h2>
 
@@ -314,19 +318,68 @@
   </section>
 
   <!-- ============ CONTACT ============ -->
-  <section class="section section--contact" id="contact">
-    <div class="contact-card">
-      <p class="section__eyebrow">05 — Contact</p>
-      <h2 class="section__title">Let's build something<br><span class="text-gradient">intelligent.</span></h2>
-      <p class="contact-card__text">
-        I'm currently open to opportunities in AI/ML Engineering, Machine Learning, Generative AI, and Python Development.
-      </p>
+  <section class="section section--contact reveal" id="contact">
+    <div class="contact-wrap">
+      <div class="contact-intro">
+        <p class="section__eyebrow">05 — Contact</p>
+        <h2 class="section__title">Let's build something<br><span class="text-gradient">intelligent.</span></h2>
+        <p class="contact-card__text">
+          I'm currently open to opportunities in AI/ML Engineering, Machine Learning, Generative AI, and
+          Python Development. Send a message below and it'll land straight in my inbox — or reach out directly.
+        </p>
 
-      <div class="contact-card__actions">
-        <a href="mailto:PASTE_YOUR_EMAIL_HERE" class="btn btn--primary">Say Hello <span aria-hidden="true">→</span></a>
-        <a href="https://github.com/Pranali-Londhe" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">GitHub</a>
-        <a href="PASTE_YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noopener noreferrer" class="btn btn--ghost">LinkedIn</a>
+        <div class="contact-links">
+          <a href="mailto:pranulondhe381@gmail.com" class="contact-links__item">
+            <span class="contact-links__icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M2 5.5A2.5 2.5 0 0 1 4.5 3h15A2.5 2.5 0 0 1 22 5.5v13a2.5 2.5 0 0 1-2.5 2.5h-15A2.5 2.5 0 0 1 2 18.5v-13Zm2.2-.5 7.3 6.13a1 1 0 0 0 1 0L19.8 5H4.2ZM20 7.1l-7.1 5.95a2.5 2.5 0 0 1-3.2 0L4 7.1v11.4c0 .28.22.5.5.5h15a.5.5 0 0 0 .5-.5V7.1Z"/></svg>
+            </span>
+            pranulondhe381@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/pranali-londhe-677a8224a" target="_blank" rel="noopener noreferrer" class="contact-links__item">
+            <span class="contact-links__icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.62 0 4.28 2.38 4.28 5.48v6.26ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+            </span>
+            linkedin.com/in/pranali-londhe
+          </a>
+          <a href="https://github.com/Pranali-Londhe" target="_blank" rel="noopener noreferrer" class="contact-links__item">
+            <span class="contact-links__icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.75 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.18-3.09-.12-.29-.51-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+            </span>
+            github.com/Pranali-Londhe
+          </a>
+        </div>
+
+        <a href="Pranali_Londhe_Resume_AIML_26%20.pdf" download class="btn btn--ghost contact-resume-btn">Download Resume <span aria-hidden="true">↓</span></a>
       </div>
+
+      <form class="contact-form" id="contactForm" action="https://formsubmit.co/pranulondhe381@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from your portfolio site">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a bit about the opportunity or project..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary form-submit" id="formSubmitBtn">
+          <span class="form-submit__text">Send Message</span>
+          <span aria-hidden="true">→</span>
+        </button>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </section>
 
@@ -337,29 +390,13 @@
   <p>Designed &amp; Built by Pranali Londhe</p>
   <div class="footer__links">
     <a href="https://github.com/Pranali-Londhe" target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href="PASTE_YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/pranali-londhe-677a8224a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="mailto:pranulondhe381@gmail.com">Email</a>
   </div>
 </footer>
 
-<script>
-  // Mobile navigation toggle
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
 
-  navToggle.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('is-open');
-    navToggle.classList.toggle('is-open');
-    navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-
-  document.querySelectorAll('#navLinks a').forEach(link => {
-    link.addEventListener('click', () => {
-      navLinks.classList.remove('is-open');
-      navToggle.classList.remove('is-open');
-      navToggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-</script>
-
+<script src="./script.js"></script>
 </body>
 </html>
